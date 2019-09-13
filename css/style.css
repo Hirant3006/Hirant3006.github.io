@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #e50914;
+  --dark-color: #141414;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #999;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.showcase {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../img/background.jpg") no-repeat center center/cover;
+}
+
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 10px 10px 100px 50px #000000, inset -10px -10px 60px #000000;
+}
+
+.showcase-top {
+  position: absolute;
+  top: 94vh;
+  z-index: 2;
+  font-size: 2vh;
+  margin-left: 2vh;
+}
+
+.showcase-top a {
+  cursor: pointer;
+  margin: 2vh 2vh;
+  font-size: 2.25vh;
+}
+
+.showcase-content {
+  z-index: 2;
+  font-size: 4vh;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1vh;
+}
+
+.highlight {
+  color: red;
+}
+.showcase-content a {
+  cursor: pointer;
+  align-self: center;
+  border: 3px solid;
+  width: auto;
+  margin: 0px 54px;
+  padding: 5px 0px;
+  font-size: 3vh;
+}
+
+.showcase a:hover{
+  /* background: #1c282d;
+  border-color: #1c282d;
+  color:var(--dark-color) */
+}
+
+.showcase-content p {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin: 0 0 2rem;
+}
