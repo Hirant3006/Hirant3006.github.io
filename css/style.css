@@ -113,3 +113,82 @@ img {
   line-height: 1.25;
   margin: 0 0 2rem;
 }
+
+.btn{
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.share-btn {
+  transform: translateY(50px);
+  width: 280px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+/* .share-btn:hover {
+  transform: scale(1.1);
+} */
+
+.share-btn span {
+  position: absolute;
+  width: 280px;
+  height: 80px;
+  color: #f1f1f1;
+  text-align: center;
+  line-height: 80px;
+  z-index: 999;
+  transition: .6s linear;
+  border-radius: 40px;
+  opacity: 1;
+  color: #999;
+  font-weight: bold;
+}
+
+.share-btn:hover span {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition-delay:  .3s;
+}
+
+.share-btn a{
+    flex:1;
+    font-size: 26px;
+    color: #999;
+    text-align:center;
+    transform: translateX(+100%);
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.share-btn:hover a{
+    opacity: 1;
+    transform: translateX(0);
+    z-index:10000;
+}
+
+.share-btn a:nth-of-type(1){
+    transition-delay:  1s;
+}
+
+.share-btn a:nth-of-type(2){
+    transition-delay:  0.8s;
+}
+
+.share-btn a:nth-of-type(3){
+    transition-delay:  0.6s;
+}
+
+.share-btn a:nth-of-type(4){
+    transition-delay:  0.4s;
+}
